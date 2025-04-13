@@ -1,0 +1,111 @@
+1. Git е инсталиран, креиран е профил на GitHub.
+
+2. Главна гранка променета на master во GitHub settings.
+
+3. Креиран е приватен репозиториум со име SI_2025_lab1_201234.
+
+4. Локален директориум и репозиториум:
+mkdir SI_2025_lab1_201234
+cd SI_2025_lab1_201234
+git init
+
+5. Поврзување со оддалечен:
+git remote add origin https://github.com/myusername/SI_2025_lab1_201234.git
+
+6. Додаден README.md:
+echo "Име: Име\nПрезиме: Презиме\nИндекс: 201234" > README.md
+git add README.md
+git commit -m "Initial commit"
+
+7. Додаден Java фајл:
+touch SI2025Lab1Main.java
+# (вметнат код)
+git add SI2025Lab1Main.java
+git commit -m "Add starter code"
+
+8. Push на гранката:
+git branch -M master 
+git push -u origin master
+
+# Чекор 9
+Креиран е GitHub Project со име SI2025 (Kanban стил)
+
+# Чекор 10
+Во колоната Backlog се додадени следниве issues:
+- Remove a task by name
+- Find all completed tasks
+- List tasks sorted by name
+- Sort tasks by priority
+- Filter tasks by category
+- Find the highest-priority unfinished task
+- Count tasks per category
+- Mark a task as completed by name
+- Mark all tasks in a category as completed
+
+# Чекор 11
+Избрани се следниве 3 issues за имплементација:
+- Remove a task by name
+- Count tasks per category
+- Find all completed tasks
+
+Овие се преместени во колоната "In Progress"
+
+# Чекор 12
+За секој од избраните issues е креирана соодветна гранка преку GitHub:
+- 1-remove-a-tasks-by-name
+- 2-find-all-completed-tasks
+- 7 count-tasks-by-category
+
+# Чекор 13
+git fetch origin
+Ова ги вчитува сите гранки од GitHub, така што локално ќе ги имаш за да можеш да се префрлиш на нив.
+
+# Чекор 14
+git checkout 1-remove-a-task-by-name
+Се префрламе на првата гранка
+
+# Чекор 15
+Имплементираме во  // 1. Remove a task by name	
+
+# Чекор 16
+git add SI2025Lab1Main.java
+git commit -m ""  
+
+# Чекор 17
+git push origin 1-remove-a-task-by-name
+Ја пушнуваме на оддалечениот репозиториум
+
+# Чекор 18
+Креираме pull request
+
+# Чекор 19
+Повторуваме за останатите
+
+# Чекор 20
+Одбираме да ги споиме 1-remove-a-task-by-name и -count-tasks-per-category каде за вториот се јави конфликт во main делот бидејќи додадовме код во тој дел, го решивме така
+што го оставивме master делот а другиот го избришавме, спојувањето се изврши со Reursive
+
+# Чекор 21
+Issues Done
+
+# Чекор 22
+git checkout master
+Се префрламе на master гранката
+
+Правиме
+git merge 2-find-all-completed-tasks
+
+Нема конфликт 
+
+# Чекор 23
+git push origin master
+
+# Чекор 24
+Issue Done
+
+# Чекор 25
+git log --oneline --graph --all
+
+# Чекор 26
+git add .txt
+git push origin master

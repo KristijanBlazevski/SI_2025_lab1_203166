@@ -1,0 +1,17 @@
+* a022734 (HEAD -> master, origin/master) Implemented find all completed tasks
+*   6c3981b Merge pull request #12 from KristijanBlazevski/7-count-tasks-per-category
+|\
+| *   0b5947b Merge branch 'master' into 7-count-tasks-per-category
+| |\
+| |/
+|/|
+* |   5bb7774 Merge pull request #10 from KristijanBlazevski/1-remove-a-task-by-name
+|\ \
+| * | 10ccc92 (origin/1-remove-a-task-by-name, 1-remove-a-task-by-name) Implement remove a task by name
+|/ /
+| * f0b4eb9 (origin/7-count-tasks-per-category, 7-count-tasks-per-category) Implemented count tasks per category
+|/
+| * bcd61bb (origin/2-find-all-completed-tasks, 2-find-all-completed-tasks) Implemented find all completed tasks
+|/
+* e499461 Add starter code
+* f0e95f6 Initial commit
