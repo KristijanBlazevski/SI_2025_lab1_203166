@@ -109,3 +109,27 @@ git log --oneline --graph --all
 # Чекор 26
 git add .txt
 git push origin master
+
+# Чекор 27
+Правиме fork https://github.com/stefanandonov/SI_2025_lab1_151020
+
+# Чекор 28
+git clone https://github.com/KristijanBlazevski/SI_2025_lab1_151020.git
+cd SI_2025_lab1_151020
+
+Клонираме и влагаме во репото
+
+# Чекор 29
+Креираме фајл 203166
+
+git add 203166.txt
+git commit -m "Add file"
+
+# Чекор 30
+git push origin master
+
+# Чекор 31
+Contribute -> create pull
+
+# Чекор 32
+Креираме pull-request
